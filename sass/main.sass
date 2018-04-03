@@ -1,0 +1,375 @@
+@import "_colors.sass"
+
+*
+ -webkit-box-sizing: border-box 
+ -moz-box-sizing: border-box 
+ box-sizing: border-box
+ margin: 0
+ padding: 0  
+body
+ font-family: 'Open Sans', sans-serif
+.main
+ background: url(/img/bg1.jpg) no-repeat center
+ background-size: cover
+ height: 100vh
+ min-height: 600px
+ position: relative 
+
+.logo
+ margin-top: 50px
+ display: inline-block
+.navigation
+	margin-top: 50px
+.phone
+ display: inline-block
+ margin-left: 50px 
+ .icon
+ 	margin-right: 10px
+ 	display: inline-block 
+ span
+  font-size: 22pt
+ 
+ .tel
+ 	display: inline-block 
+ 	&:last-child
+ 	 font-size: 9pt
+ 	 margin: 0 
+.nav
+	margin: 0 
+	list-style-type: none
+	-webkit-justify-content: flex-end 
+	justify-content: flex-end 
+	display: flex
+	-webkit-flex-wrap: nowrap 
+	 -ms-flex-wrap: nowrap 
+	 flex-wrap: nowrap  
+	&-item
+	 margin-left: 20px
+ &-link
+  font-size: 12pt
+  color: #fff
+  text-decoration: none
+  text-transform: uppercase
+  padding-top: 10px
+  &::before
+   content: ''
+   width: 100%
+   height: 2px  
+   display: block
+   background-color: #fff
+   transform: translateY(-20px) scale(0)
+   transition: all 0.2s
+  &:hover
+   text-decoration: none
+   &::before
+    transform: translateY(-20px) scale(1)  
+  /*&:hover
+   border-top: 2px solid #fff*/ 
+.main-text
+ margin-top: 80px
+ .text
+ 	margin-top: 100px
+  border: 5px solid #fff
+  color: #FFF
+  font-size: 32pt
+  text-transform: uppercase
+  padding: 20px 
+.portfolio
+	background-color: #FFF
+	position: absolute
+	left: 0
+	bottom: 0
+	width: 100% 
+	ul
+		width: 100%
+		text-align: justify
+		&:after
+			width: 100%
+			height: 0px
+			visibility: hidden
+			overflow: hidden
+			content: ""
+			display: inline-block 
+ &-item
+  display: inline-block
+  &::after
+   content: ''
+   display: block
+   width: 100%
+   height: 10px
+   background-color: $bt-color
+   transform: scale(0)
+   transition: all 0.2s
+  &:hover
+   &::after
+    transform: scale(1)    
+  a .content
+  	display: inline-block
+  	font-weight: 800
+  	color: grey
+  	text-transform: uppercase
+  .content:hover p
+  	color: #000   	
+  .content
+  	display: inline-block
+   padding: 15px
+   text-align: center  
+   img
+   	max-width: 100%
+   	height: auto
+.service
+	height: 100vh
+ min-height: 600px
+ position: relative
+ text-align: center
+ h2
+ 	font-weight: 800
+ 	margin-top: 135px
+ 	font-size: 30pt
+ 	text-transform: uppercase
+ .hr	
+ 	margin-bottom: 20px 
+ .hr::before
+ 	content: ''
+ 	width: 100px
+ 	height: 1px
+ 	background-color: grey
+ 	display: inline-block
+ 	vertical-align: middle
+ 	margin-right: 10px  
+	.hr::after
+		content: ''
+		width: 100px
+		height: 1px
+		background-color: grey
+		display: inline-block
+		vertical-align: middle
+		margin-left: 10px
+ a .content-2
+  display: inline-block 	
+ .content-2:hover 
+  background-color: $main-color
+ .content-2:hover p
+ 	color: #fff
+ .content-2:hover img
+  filter: brightness(0) invert(1)	   	 
+ .content-2
+  	display: inline-block
+  	width: 30% 
+   padding: 68px
+   text-align: center  
+   img
+   	max-width: 100%
+   	height: auto
+   	padding: 10px 0 30px 0
+   p
+    text-transform: uppercase
+    font-weight: 700
+    color: $main-color
+.free-service
+ background: url(/img/bg2.jpg) no-repeat left
+ height: 60vh
+ min-height: 500px
+ &-1
+ 	position: absolute
+ 	top: 100px 
+  h2
+  	text-transform: uppercase
+  	font-size: 26pt
+  	color: #FFF
+  	margin-bottom: 20px
+  p
+   color: #FFF
+  .order 
+   background-color: #FFF
+   color: $bt-color
+   padding: 20px
+   font-size: 14pt
+   font-weight: bold 
+   text-transform: uppercase
+   margin-top: 100px
+   border-style: none
+   cursor: pointer
+   outline: 0 !important
+  .order:hover
+   background-color: $main-color
+   color: #fff 
+   outline: 0 !important
+  .order:active
+   outline: 0 !important
+ .master
+  position: absolute
+  top: 46px
+  left: 150px
+.advantages
+	height: 60vh
+ min-height: 500px
+ text-align: center 
+ h2
+ 	font-weight: 800
+ 	margin-top: 135px
+ 	font-size: 30pt
+ 	text-transform: uppercase
+ .hr	
+ 	margin-bottom: 50px 
+ .hr::before
+ 	content: ''
+ 	width: 100px
+ 	height: 1px
+ 	background-color: grey
+ 	display: inline-block
+ 	vertical-align: middle
+ 	margin-right: 10px  
+	.hr::after
+		content: ''
+		width: 100px
+		height: 1px
+		background-color: grey
+		display: inline-block
+		vertical-align: middle
+		margin-left: 10px
+	img
+	 display: inline-block
+	 margin-right: 25px
+	 vertical-align: 80% 
+	.text-in
+	 display: inline-block
+	 width: 40%
+	 text-align: left
+	 margin-bottom: 80px
+	 p
+	  width: 80%  
+	 h3
+	 	font-size: 18pt
+	 	text-transform: uppercase
+   font-weight: 700
+   color: $main-color
+   margin-bottom: 10px
+.about
+ text-align: center
+ img
+  margin-top: 50px 
+ h2
+ 	font-weight: 800 
+ 	margin-top: 100px
+ 	font-size: 30pt
+ 	text-transform: uppercase	
+ .hr	
+ 	margin-bottom: 20px 
+ .hr::before
+ 	content: ''
+ 	width: 100px
+ 	height: 1px
+ 	background-color: grey
+ 	display: inline-block
+ 	vertical-align: middle
+ 	margin-right: 10px  
+	.hr::after
+		content: ''
+		width: 100px
+		height: 1px
+		background-color: grey
+		display: inline-block
+		vertical-align: middle
+		margin-left: 10px
+.video
+	margin-top: 120px
+	height: 60vh
+ min-height: 500px
+ text-align: center
+ background: url(/img/bg3.jpg) no-repeat center
+ background-size: cover
+ .overlay
+  width: 100%
+  height: 100%
+  background: rgba(103,14,122,0.8)
+ h2
+  font-weight: 800 
+ 	margin-top: 150px
+ 	font-size: 30pt
+ 	text-transform: uppercase	
+ 	color: #FFF
+ span
+  color: #fff
+ p
+  text-transform: uppercase
+  color: #FFF
+  font-size: 16pt
+ .play
+ 	display: inline-block
+  color: #fff
+  padding: 25px 40px
+  font-size: 14pt
+  font-weight: bold 
+  text-transform: uppercase
+  text-decoration: none 
+  margin-top: 50px
+  border: 2px #fff solid
+  cursor: pointer
+  outline: 0 !important
+  background: none
+  user-select: none
+  .fa
+   margin-right: 15px
+ .play:hover
+  background-color: #FFF
+  color: $main-color
+.contacts
+	background: url(/img/bg4.jpg) no-repeat center
+ background-size: auto auto
+ background-position: bottom right
+ height: 55vh  
+	margin-top: 120px
+ h3
+  text-transform: uppercase
+  margin-left: 15px
+  font-size: 28pt
+  font-weight: 800
+  color: $main-color   
+ .adress
+  .fa
+   margin: 15px 15px 15px 15px
+   color: grey 
+ p
+  text-transform: uppercase
+  font-weight: 700
+  font-size: 14pt
+  margin-left: 15px
+  margin-top: 35px
+  color: $bt-color
+ .order-2
+  background-color: $bt-color
+  color: #fff
+  padding: 20px 50px
+  font-size: 14pt
+  font-weight: bold 
+  text-transform: uppercase
+  margin-top: 20px
+  border-style: none
+  cursor: pointer
+  outline: 0 !important
+  margin-left: 15px
+  &:hover
+   background-color: #FFF
+   border: 2px solid $bt-color
+   color: $bt-color
+ .footer
+ 	  
+ 	                
+
+
+
+
+
+
+     	 
+
+
+        
+        
+  
+      	
+  	 
+	 
+	 
+ 
