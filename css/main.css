@@ -21,7 +21,7 @@ h2 {
 }
 
 .main {
-  background: url("../../../img/bg1.jpg") no-repeat center;
+  background: url("../img/bg1.jpg") no-repeat center;
   background-size: cover;
   height: 100vh;
   min-height: 600px;
@@ -271,7 +271,7 @@ h2 {
 }
 
 .free-service {
-  background: url("../../../img/bg2.jpg") no-repeat left;
+  background: url("../img/bg2.jpg") no-repeat left;
   height: 60vh;
   min-height: 500px;
 }
@@ -424,7 +424,7 @@ h2 {
   height: 60vh;
   min-height: 500px;
   text-align: center;
-  background: url("../../../img/bg3.jpg") no-repeat center;
+  background: url("../img/bg3.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -481,7 +481,7 @@ h2 {
 }
 
 .contacts {
-  background: url("../../../img/bg4.jpg") no-repeat center;
+  background: url("../img/bg4.jpg") no-repeat center;
   background-size: auto auto;
   background-position: bottom right;
   height: 55vh;
