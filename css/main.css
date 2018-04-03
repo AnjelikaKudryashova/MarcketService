@@ -1,3 +1,7 @@
+.slick-active {
+  outline: none !important;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -9,8 +13,15 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+h2 {
+  font-weight: 800;
+  margin-top: 135px;
+  font-size: 30pt;
+  text-transform: uppercase;
+}
+
 .main {
-  background: url("../img/bg1.jpg") no-repeat center;
+  background: url("../../../img/bg1.jpg") no-repeat center;
   background-size: cover;
   height: 100vh;
   min-height: 600px;
@@ -58,9 +69,25 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: nowrap;
-  -webkit-flex-wrap--ms-flex-wrap: nowrap;
-  -webkit-flex-wrap-flex-wrap: nowrap;
+  position: relative;
+}
+
+.nav-btn {
+  display: none;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 20pt;
+  color: #fff;
+  position: absolute;
+  left: 260px;
+  top: -72px;
+}
+
+.nav-btn:hover {
+  cursor: pointer;
 }
 
 .nav-item {
@@ -183,13 +210,6 @@ body {
   text-align: center;
 }
 
-.service h2 {
-  font-weight: 800;
-  margin-top: 135px;
-  font-size: 30pt;
-  text-transform: uppercase;
-}
-
 .service .hr {
   margin-bottom: 20px;
 }
@@ -251,7 +271,7 @@ body {
 }
 
 .free-service {
-  background: url("../img/bg2.jpg") no-repeat left;
+  background: url("../../../img/bg2.jpg") no-repeat left;
   height: 60vh;
   min-height: 500px;
 }
@@ -261,7 +281,7 @@ body {
   top: 100px;
 }
 
-.free-service-1 h2 {
+.free-service-1 h3 {
   text-transform: uppercase;
   font-size: 26pt;
   color: #FFF;
@@ -302,16 +322,8 @@ body {
 }
 
 .advantages {
-  height: 60vh;
   min-height: 500px;
   text-align: center;
-}
-
-.advantages h2 {
-  font-weight: 800;
-  margin-top: 135px;
-  font-size: 30pt;
-  text-transform: uppercase;
 }
 
 .advantages .hr {
@@ -371,13 +383,6 @@ body {
   margin-top: 50px;
 }
 
-.about h2 {
-  font-weight: 800;
-  margin-top: 100px;
-  font-size: 30pt;
-  text-transform: uppercase;
-}
-
 .about .hr {
   margin-bottom: 20px;
 }
@@ -402,12 +407,24 @@ body {
   margin-left: 10px;
 }
 
+.clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px 0 20px 0;
+}
+
+.clients .client img {
+  margin: auto;
+  padding: 20px;
+}
+
 .video {
   margin-top: 120px;
   height: 60vh;
   min-height: 500px;
   text-align: center;
-  background: url("../img/bg3.jpg") no-repeat center;
+  background: url("../../../img/bg3.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -464,11 +481,18 @@ body {
 }
 
 .contacts {
-  background: url("../img/bg4.jpg") no-repeat center;
+  background: url("../../../img/bg4.jpg") no-repeat center;
   background-size: auto auto;
   background-position: bottom right;
   height: 55vh;
   margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts .map {
+  width: 90%;
 }
 
 .contacts h3 {
@@ -511,4 +535,184 @@ body {
   background-color: #FFF;
   border: 2px solid #cb0529;
   color: #cb0529;
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 18pt;
+    margin-top: 50px;
+  }
+
+  .board {
+    margin-bottom: 20px;
+  }
+
+  .board img {
+    width: 100%;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .logo img {
+    width: 50%;
+  }
+
+  .navigation {
+    margin-top: 0;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    height: 24vh;
+    width: 90%;
+    background-color: #FFF;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    z-index: 1;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .nav__active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .nav-item {
+    text-align: center;
+  }
+
+  .nav-link {
+    line-height: 2;
+    color: #cb0529;
+  }
+
+  .nav-link::before {
+    display: none;
+  }
+
+  .nav-btn {
+    display: block;
+  }
+
+  .portfolio {
+    display: none;
+  }
+
+  .master {
+    display: none;
+  }
+
+  .main-text {
+    margin-top: 30px;
+  }
+
+  .main-text .text {
+    margin-top: 0;
+  }
+
+  .main-text .text p {
+    font-size: 18pt;
+  }
+
+  .phone .icon {
+    display: none;
+  }
+
+  .phone .tel {
+    display: none;
+  }
+
+  .service .content-2 {
+    width: 40%;
+    padding: 0;
+  }
+
+  .service .content-2 p {
+    font-size: 10pt;
+  }
+
+  .free-service .free-service-1 {
+    position: static;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .free-service .free-service-1 h3 {
+    font-size: 16pt;
+  }
+
+  .free-service .free-service-1 .order {
+    margin-top: 70px;
+  }
+
+  .advantages img {
+    margin: auto;
+    display: block;
+  }
+
+  .advantages .text-in {
+    margin: 5px auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .advantages .text-in p {
+    display: none;
+  }
+
+  .advantages .text-in h3 {
+    font-size: 14pt;
+  }
+
+  .video p {
+    font-size: 14pt;
+    margin-top: 65px;
+  }
+
+  .video .play {
+    margin-top: 100px;
+  }
+
+  .video h2 {
+    margin-top: 30px;
+    font-size: 16pt;
+  }
+
+  .contacts {
+    height: 150vh;
+    margin-top: 30px;
+  }
+
+  .contacts .map {
+    width: 100%;
+  }
+
+  .contacts .col-md-5 {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .contacts .col-md-7 {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .contacts .col-md-7 h3 {
+    text-align: center;
+  }
+
+  .contacts .order-2 {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
 }

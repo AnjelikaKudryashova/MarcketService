@@ -1,0 +1,14 @@
+@media (max-width: 480px) {
+  .board {
+    display: none; }
+
+  .portfolio {
+    display: none; }
+
+  .master {
+    display: none; }
+
+  .main-text {
+    font-size: 18pt; } }
+
+/*# sourceMappingURL=_media.css.map */

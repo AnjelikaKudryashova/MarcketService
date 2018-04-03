@@ -7,6 +7,10 @@
 
   <!-- Bootstrap grid CSS -->
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  
+  <link rel="stylesheet" href="slick/slick-theme.css"> 
+  <link rel="stylesheet" href="slick/slick.css"> 
+
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
   <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -18,7 +22,7 @@
     <div class="header">
       <div class="container">
         <div class="row">
-          <div class="col-7">
+          <div class="col-md-7">
             <div class="logo">
               <img src="img/лого.png" alt="">
             </div>
@@ -32,8 +36,9 @@
              </div>
            </div>
          </div>
-         <div class="col-5">
+         <div class="col-md-5 col-xs-12">
           <nav class="navigation">
+            <button class="nav-btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
             <ul class="nav">
               <li class="nav-item">
                 <a class="nav-link" href="#">Главная</a>
@@ -64,9 +69,11 @@
        </div>
        <div class="col-md">
         <div class="text">
+          <p>
           Изготовление
           наружной рекламы 
           в Казани
+          </p>
         </div>
       </div>
     </div>
@@ -139,8 +146,8 @@
     <div class="row">
       <div class="col-md-7">
         <div class="free-service-1">
-         <h2>Бесплатная услуга</h2>
-         <h2>Выезд замерщика на объект</h2>
+         <h3>Бесплатная услуга</h3>
+         <h3>Выезд замерщика на объект</h3>
          <p>На объекты выезжает специалист, делает необходимые замеры и составляет предварительную смету на изготовление рекламной подукции</p>
          <button class="order">Заказать замерщика бесплатно</button>
        </div>
@@ -195,35 +202,33 @@
       <div class="col-md">
        <h2>Наши клиенты</h2>
        <div class="hr"><span>&#215</span></div>
-     </div>
+     
+ 
+  
+    <div class="clients">
+      <div class=" client">  
+       <img src="img/logo_sportmaster.png" alt="">
+      </div>
+      <div class=" client">
+       <img src="img/logo-nomos-bank.png" alt="">
+      </div>
+      <div class=" client">
+       <img src="img/logo-pandora.png" alt="">
+      </div>
+      <div class=" client">
+       <img src="img/organic3.png" alt="">
+      </div>
+      <div class=" client"> 
+       <img src="img/svyaznoy-Bank_21.png" alt="">
+      </div>
+      <div class=" client"> 
+       <img src="img/uaz-logo.png" alt="">
+      </div>
+    </div>
+  </div>
    </div>
  </div>
- <div class="container">
-  <div class="row">
-    <div class="col-md">  
-     <img src="img/logo_sportmaster.png" alt="">
-   </div>
-   <div class="col-md">
-     <img src="img/logo-nomos-bank.png" alt="">
-   </div>
-   <div class="col-md">
-     <img src="img/logo-pandora.png" alt="">
-   </div>
- </div> 
-</div> 
-<div class="container">   
-  <div class="row">    
-   <div class="col-md">
-    <img src="img/organic3.png" alt="">
-  </div>
-  <div class="col-md"> 
-    <img src="img/svyaznoy-Bank_21.png" alt="">
-  </div>
-  <div class="col-md"> 
-    <img src="img/uaz-logo.png" alt="">
-  </div>
- </div>
- </div>
+ 
  <div class="video">
   <div class="overlay">
     <div class="container">
@@ -242,9 +247,11 @@
  <!-- /.about -->
  <div class="contacts">
    <div class="container">
-     <div class="row">
+     <div class="row no-gutters">
        <div class="col-md-5">
-         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A87cbb38f994af6449b29c462067450413cdd8170532c1fa5a72f547e87d51cd6&amp;width=440&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
+        <div class="map">
+         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A87cbb38f994af6449b29c462067450413cdd8170532c1fa5a72f547e87d51cd6&amp;width=100%&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>   
        </div>
        <div class="col-md-7">
          <h3>Контакты</h3>
@@ -261,10 +268,7 @@
        </div>
      </div>
    </div>
-   <div class="container-fluid">
-     <div class="row">
-      <div class="footer"></div></div>
-   </div>
+   
  </div>
 
 <!-- Optional JavaScript -->
@@ -272,5 +276,36 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="slick/slick.js"></script>
+<script>
+  $('.clients').slick({
+    arrows: false,
+    dots: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    speed: 1000,
+    responsive : [
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 600
+             }
+    }]
+  });
+</script>
+<script>
+  $(document).ready(function(){
+     var navBtn = $('.nav-btn');
+     var menu = $('.nav');
+
+     navBtn.on('click', function() {
+      menu.toggleClass('nav__active');
+     })
+  });
+</script>
 </body>
 </html>     
