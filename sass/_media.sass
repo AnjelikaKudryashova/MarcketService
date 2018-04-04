@@ -1,9 +1,9 @@
-@media (max-width: 480px)
+@media screen and (max-width: 480px)
  h2
  	font-size: 18pt
  	margin-top: 50px
  .board
- 	margin-bottom: 20px
+ 	margin-bottom: 50px
  	img
    width: 100%
  .logo
@@ -88,16 +88,131 @@
   	margin-top: 30px
    font-size: 16pt
  .contacts
-  height: 150vh
+  height: 130vh
   margin-top: 30px                        
   .map
-   width: 100%
+   width: 90%
+   margin: auto 
   .col-md-5 
    order: 2
   .col-md-7
   	order: 1
+  	p
+  		margin-bottom: 15px
   	h3
     text-align: center
   .order-2
+   margin-bottom: 15px  
+
+@media (min-width: 480px) and (max-width: 768px) 
+ .navigation
+ 	margin-top: 30px 
+ .nav
+ 	display: none
+ 	position: absolute
+ 	top: 30px
+ 	height: 6vh 
+ 	width: 96%  
+ 	background-color: #FFF 
+ 	z-index: 1
+ 	text-align: center
+ 	-webkit-align-items: center 
+ 	align-items: center   
+ 	&__active
+ 		display: flex 
+ .nav-item
+ 	display: inline 
+ .nav-link
+ 	line-height: 2
+ 	color: $bt-color 
+  &::before
+   display: none
+ .nav-btn
+  display: block
+  top: -38px
+  left: 675px    
+ .board
+  display: none
+ .phone
+  margin-top: 15px
+ .main-text  
+  .text
+   margin-top: 0
+   text-align: center
+   background-color: $bt-color
+   width: 100%
+ .free-service
+  .master
+   top: 68px
+   left: -4px
+ .free-service-1
+ 	top: 72px
+  .order 
+  	margin-top: 25px  
+ .advantages
+  .text-in
+   width: 37%
+ .contacts
+  p
+   margin-top: 15px
+  .order-2   
    margin-left: 0
-   margin-bottom: 10px        	 
+
+@media (min-width: 800px) and (max-width: 1024px)
+ .main
+ 	height: 75vh 
+ .navigation
+ 	margin-top: 30px 
+ .nav
+ 	display: none
+ 	position: absolute
+ 	top: 30px
+ 	height: 6vh 
+ 	width: 96%  
+ 	background-color: #FFF 
+ 	z-index: 1
+ 	text-align: center
+ 	-webkit-align-items: center 
+ 	align-items: center   
+ 	&__active
+ 		display: flex 
+ .nav-item
+ 	display: inline 
+ .nav-link
+ 	line-height: 2
+ 	color: $bt-color 
+  &::before
+   display: none
+ .nav-btn
+  display: block
+  top: -38px
+  left: 900px
+ .board
+ 	img
+   width: 100%
+ .main-text
+  margin-top: 155px   
+  .text
+   margin-top: 35px
+ .service
+  height: 60vh
+ .free-service 
+  .master
+   top: 171px
+   left: 25px
+  &-1
+   top: 200px
+   p
+    margin-top: 40px
+   .order 
+    margin-top: 70px
+ .advantages
+  h2
+   margin-top: 0
+ .about
+  h2
+   margin-top: 0
+ .video
+  height: 30vh
+  h2
+   margin-top: 100px                                            
